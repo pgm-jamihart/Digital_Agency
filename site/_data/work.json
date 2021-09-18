@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Pro-league",
+        "content": "Pro League, the organization that unites all 26 professional Belgian football clubs, wanted to create a new digital ecosystem that revolutionizes the fan experience for Belgian football leagues and strengthens the brand image of Pro League. We came in the picture to build a digital platform that flawlessly provides the users with content, stats and videos. Available right at their fingertips.",
+        "image": "../static/images/pro-league.png"
+    },
+    {
+        "title": "Payconic",
+        "content": "In 2018 Payconiq & Bancontact, the dominating mobile payment solutions in Belgium, merged and In The Pocket was sitting front row of the fintech wedding of the year. We developed their new mobile application, the first tangible result of the merge.",
+        "image": "../static/images/payconiq.jpeg"
+    },
+    {
+        "title": "Argenta",
+        "content": "In today’s decade of design, customer experience has reached paramount importance. A message that Argenta understood as no other when they reached out to us for a complete UX audit of their mobile app. Setting off with an ambitious app store score of 4.5, we’ve been asked to challenge them even more to turn UX into their ultimate competitive advantage. And that in only 6 weeks.",
+        "image": "../static/images/argenta.jpeg"
+    }
+]

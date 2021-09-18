@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 288 160">
+  <defs>
+    <style>.cls-1,.cls-2{fill:#0dcaf0;}.cls-1{fill-rule:evenodd;}</style>
+  </defs>
+  <title>Structuur_ok</title>
+  <path class="cls-1" d="M166.43,50.41V85.07h22.42V50.41Zm13.78,6.12-7.67,14.23V56.53ZM175.07,79l7.67-14.23V79Z"></path>
+  <rect class="cls-2" x="99.15" y="91.19" width="61.16" height="6.12"></rect>
+  <rect class="cls-2" x="99.15" y="103.42" width="34.66" height="6.12"></rect>
+  <rect class="cls-2" x="139.92" y="103.42" width="20.39" height="6.12"></rect>
+  <path class="cls-1" d="M172.54,103.47h10.2V97.31h-10.2Zm-6.11,6.12h22.42V91.19H166.43Z"></path>
+  <path class="cls-1" d="M105.26,79h48.93V56.53H105.26Zm-6.11,6.11h61.16V50.41H99.15Z"></path>
+</svg>

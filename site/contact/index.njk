@@ -1,0 +1,164 @@
+---
+layout: layouts/base.njk
+title: Contact
+eleventyNavigation:
+  key: Contact
+  order: 5
+---
+<section class="location container-fluid m-0 p-0 fade-in-up">
+    <div id="map" class="map"></div>
+    <div class="text-balloon">
+        <div class="text-balloon__inner"></div>
+        <span class="text-balloon__inner__title">Say hi!</span>
+        <p class="text-balloon__inner__content">Do you have a question or would you like to visit us? Contact us via the form below.</p>
+        <span class="text-balloon__inner__icon">
+            <i class="fas fa-info-circle"></i>
+        </span>
+    </div>
+</section>
+
+<section class="container my-5 fade-in-up">
+    <div class="row justify-content-between">
+        <form class="contact-form col-md-6 mb-5 mb-md-0" action="submit">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name *</label>
+                <input type="text" class="form-control" id="name" required="required" placeholder="Your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address *</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="YourEmail@email.com">
+            </div>
+             <div class="mb-3">
+                <label for="phone" class="form-label">Phone number</label>
+                <input type="tel" class="form-control" id="phone"  placeholder="+32 123 45 67 89" pattern="[+]{1}[0-9]{11,14}">
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="topic">What do you want to contact us about? *</label>
+
+                <select class="form-select" id="topic" aria-label="Default select example" required="required">
+                    <option selected value="">--Please choose an option--</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Job">Job</option>
+                    <option value="Geneeral">General</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <span class="form-label mb-2 d-block">Your message *</span>
+                <textarea class="form-control" required="required" placeholder="Your message ..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div class="contact-details col-md-3 mt-5 mt-md-0">
+            <div class="mb-5">
+                <h3>Contact us</h3>
+                <a href="mailto:sebeja@hotmail.com" class="contact-details__contact d-inline-block mb-2">sebeja@hotmail.com</a>
+                <a href="tel:+3277777777" class="contact-details__contact d-inline-block mb-2">+32 (0)77 77 77 77 </a>
+            </div>
+            <div class="mb-5">
+                <h3>Find us</h3>
+                <span class="d-block mb-2">SYBEJA</span>
+                <span class="d-block mb-2">Foreestelaan 1</span>
+                <span class="d-block mb-2">9000 Gent</span>
+            </div>
+            <div>
+                <h3>Follow us</h3>
+                <a class="contact-details__social" href="">
+                    <span class="contact-details__social__icon d-inline-block">
+                        <i class="fab fa-facebook"></i>
+                    </span>
+                    <span class="d-inline-block">Facebook</span>
+                </a>
+                <a class="contact-details__social" href="">
+                    <span class="contact-details__social__icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </span>
+                    <span>LinkedIn</span>
+                </a>
+                <a class="contact-details__social" href="">
+                    <span class="contact-details__social__icon">
+                        <i class="fab fa-github"></i>
+                    </span>
+                    <span>Github</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+{# 
+<div class="contact container justify-content-between p-3">
+    <div class="row">
+    
+    
+    <section class="contact__intro col-12 mb-3">
+        <h1>Contact us</h1>
+
+        <p>Questions? Comments? Clever remarks? We'd love to hear you!</p>
+    </section>
+
+    <section class="contact__information col-md-6">
+        <h2 class="mt-3">Contact details</h2>
+
+        {% for contact in contact %}
+            <h3>{{ contact.title }}</h3>
+            
+            <a href="{{ contact.link }}" class="contact__information__item px-3 py-2 mb-3">
+                <span class="contact__information__item__icon mr-3">
+                    <i class="fas {{ contact.icon }}"></i>
+                </span>
+
+                <span class=" contact__information__item__content ml-5">{{ contact.text }}</span>
+            </a>
+        {% endfor %}
+        
+        <h3>Social media</h3>
+
+        {% for social in socials %}
+            <a href="{{ social.link }}" class="contact__information__item p-3 mb-3">
+                <img src="{{ social.img }}" alt="{{ social.alt }}">
+
+                <span class="contact__information__item__content">{{ social.text }}</span>
+            </a>
+        {% endfor %}
+    </section>
+    
+    <section class="col-md-6 col-12">
+        <h2 class="mt-3 mb-3">Send us a message</h2>
+        <form action="submit mt-2">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" required="required" placeholder="Your name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder="YourEmail@email.com">
+            </div>
+             <div class="mb-3">
+                <label for="phone" class="form-label">Phone number</label>
+                <input type="tel" class="form-control" id="phone" required="required" placeholder="+32 123 45 67 89" pattern="[+]{1}[0-9]{11,14}">
+            </div>
+            <div class="mb-3">
+                <label class="form__label" for="topic">What do you want to contact us about? *</label>
+
+                <select class="form-select" id="topic" aria-label="Default select example" required="required">
+                    <option selected value="">--Please choose an option--</option>
+                    <option value="Sales">Sales</option>
+                    <option value="Job">Job</option>
+                    <option value="Geneeral">General</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <span class="form__label mb-2 d-block">Your message</span>
+                <textarea class="form-control" required="required" placeholder="Your message ..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </section>
+
+    <iframe class="c-12 mt-5" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2506.1741993576593!2d3.6683319160335657!3d51.08679257956817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c37049c2ee923b%3A0x268fc495b0688754!2sIndustrieweg%20232%2C%209030%20Gent!5e0!3m2!1snl!2sbe!4v1616391326295!5m2!1snl!2sbe" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+</div>
+</div> #}

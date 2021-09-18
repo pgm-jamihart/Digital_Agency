@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Slots decoration",
+        "content": "A website as a calling card for unique total projects and a webshop for interiors that really comes in.",
+        "image": "./static/images/cases/slots.jpg",
+        "link": ""
+    },
+    {
+        "title": "Jules Destrooper",
+        "content": "Jules Destrooper's biscuits. Who doesn't melt for it? It was our job to convey the delicious taste.",
+        "image": "./static/images/cases/jules_destrooper.jpg",
+        "link": ""
+    }
+]

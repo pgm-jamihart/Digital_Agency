@@ -1,0 +1,40 @@
+// Media queries
+
+@mixin small {
+    @media (min-width: #{$small-width}) and (max-width: #{$medium-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin medium {
+    @media (min-width: #{$medium-width}) and (max-width: #{$large-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin large {
+    @media (min-width: #{$large-width}) {
+        @content;
+    }
+}
+
+
+// animations 
+
+@keyframes inOutZoom {
+    0% {
+        transform: scale(1);
+    }
+    
+    25% {
+        transform: scale(1.1);
+    }
+    
+    50% {
+        transform: scale(1);
+    }
+    
+    75% {
+        transform: scale(1.1);
+    }
+}

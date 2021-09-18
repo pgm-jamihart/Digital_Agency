@@ -1,0 +1,58 @@
+$font-family-source-sans-pro: 'Source Sans Pro', sans-serif;
+$font-family-montserrat: 'Montserrat', sans-serif;
+$font-family-ibm-plex-mono: 'IBM Plex Mono', monospace;
+$font-logo: 'Varela Round', sans-serif;
+
+$ahs-purple: #7E57C5;
+$ahs-pink: #D20082;
+$ahs-red: #ED0034;
+$ahs-orange: #F58732;
+$ahs-green: #5AB946;
+$ahs-blue: #00A5D9;
+
+$spacing: 18;
+
+// Our Colors 
+$accent-color: #0dcaf0;
+$white-color: #ffffff;
+$black-color: #000000;
+$footer-top-color: #f1f1f1;
+$body-bg: #fafafa;
+
+
+// font size
+
+$text-base: 1rem;
+$text-m: 1.5rem;
+$text-lg: 2rem;
+$text-elg: 3rem;
+$text-btn: 1.2rem;
+
+// font-weight
+
+$font-weights: (
+    "light": 300,
+    "normal": 400,
+    "bold": 600,
+);
+
+// border-radius
+
+$border-radius-sm: 0.3rem;
+$border-radius-md: 1rem;
+$border-radius-circle: 50%;
+
+// box-shadow
+
+$box-shadow-cards: rgb(204, 219, 232) 3px 3px 6px 0px, rgba(217, 227, 236, 0.164) -3px -3px 6px 1px;
+$box-shadow-clients: 0px 6px 12px #186474; 
+$box-shadow-header: 0px 8px 10px rgb(193, 213, 230); 
+
+// transition 
+
+$transition: all 0.2s ease-in-out; 
+
+// width 
+$small-width: 576px;
+$medium-width: 768px;
+$large-width: 992px;
